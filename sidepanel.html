@@ -1,7 +1,21 @@
 <html>
 
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jodit@4.0.18/es2015/jodit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jodit@4.0.18/es2015/jodit.min.js"></script>
+</head>
+
 <body>
     <h1>This is the sidepanel</h1>
+    <textarea id="editor"></textarea>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var editor = new Jodit("#editor", {
+                // Configurations
+            });
+        });
+    </script>
 </body>
+
 
 </html>
